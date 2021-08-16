@@ -1,0 +1,37 @@
+Projet - Intégrer un site internet sans Bootstrap
+
+Le projet :
+Nous avons recu une demande de la part du Crédit Lédonien, nous demandant de réaliser son site internet. Le Crédit Lédonien est un organisme de crédit basé à Lons le Saunier.
+Avant de partir en vacances notre graphiste nous à fourni les maquettes des différentes pages à intégrer. Cependant il n’a pas eu le temps de finir la maquette responsive et nous a laissé carte libre. Il n’a fait qu’une seule remarque, le menu latéral devait être fixe en bas sur mobile et l’indication scroll dans celui-ci devait disparaitre.
+
+Explications :
+Le menu latéral restera fixe et vous suivra tout au long de votre navigation sur la site.
+Le simulateur devra se comporter comme sur les maquettes fournies
+Le menu devra s'ouvrir en mode full screen comme sur les maquettes fournies
+Mettre des animations sur les boutons et liens pour éviter une transition trop brutale
+
+Objectifs : 
+Décomposer et attribuer les tâches avec le système de projet de gitHub.
+Lorsqu'une personne prend une tâche elle doit estimer son temps. 
+Lorsqu'elle a fini une tâche elle doit en prendre une autre. 
+S'il n'y a plus de tâche à réaliser alors la personne aide un collègue ou fait du contrôle pour corriger les anomalies. 
+Faire un point régulier sur l'avancer de votre projet et demander de l'aide si vous êtes en difficulté.
+L'intégration devra être faite SANS l'aide de bootstrap.
+Le site devra répondre à toutes les normes sémantique en rigueur
+Il devra être optimisé pour le référencement
+Il devra être optimisé pour une vitesse d’affichage optimale.
+
+Durée : 10 jours
+
+Livrables : Projet sur Github + fichiers sur serveur
+
+Travaille à réaliser par groupe de 3.
+
+Groupe : 
+
+Céleste – Josélito – Arthur
+Francis – Marley – Dylan
+Yamina – Aleaddin – Laurent
+Alfonso – Lucas - Tommy
+
+Date : 16/08/2020 au 27/08/2020
