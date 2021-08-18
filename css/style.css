@@ -150,19 +150,24 @@ font-weight: bold;
 /* SECTION DECOUVERTE */ 
 /* IL FAUDRA REMPLACER LE MARGIN RIGHT PAR LA LARGEUR DU MENU*/
 .sectionOffres {
-    
   width: 60vw;
   float: right;
+  height: 80vh;
 }
 #container {
-  clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%);
-  background-color: #008090;
+  background: url(../images/reflets_container.png),#008090;
+  background-size: cover;
+  object-fit: fill;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   height: 50vh;
   width: 30vw;
   margin-right: 4vw;
   float: right;
   transform: translateY(-80%);
+  z-index: 2;
 }
+
+
 #clipped {
   height: 80vh;
   width: 55vw;
@@ -172,8 +177,13 @@ font-weight: bold;
   float: right;
 }
 
+.diapo {
+  position: relative;
+  width: 25vw;
+  z-index: 3;
+  transform: translate(115%,-30%);
 
-
+}
 
 .onglets {
   position: absolute;
@@ -198,19 +208,23 @@ font-weight: bold;
   color: white;
 }
 
-
-.contenuOnglets {
-  
-}
-
-/*effet de fondu*/ 
 .tabcontent {
-  animation: fadeEffect 0.5s; 
+  color: white;
 }
 
-@keyframes fadeEffect {
-  from {opacity: 0.4;}
-  to {opacity: 1;}
+.tabcontent a {
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-bottom: solid 2px white;
+  padding: 7px 0px;
+  margin-left: 12.5%;
+}
+
+.tabcontent p {
+  width: 80%;
+  margin-left: 12.5%;
+  text-justify: auto;
 }
 
 .offres {
@@ -223,3 +237,15 @@ font-weight: bold;
   text-align: right;
   padding-right: 3vw;
 }
+
+
+/*effet de fondu*/ 
+.tabcontent {
+  animation: fadeEffect 0.5s; 
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0.4;}
+  to {opacity: 1;}
+}
+
