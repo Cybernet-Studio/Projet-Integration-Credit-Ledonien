@@ -26,6 +26,8 @@ function showSlides(n) {
 }
 
 
+
+
 function openoffers(evt, offerName) {
   // Declare all variables
   var i, tabcontent, tablinks;

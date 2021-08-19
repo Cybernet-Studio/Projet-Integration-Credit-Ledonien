@@ -18,8 +18,8 @@
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?5u6udp');
-  src:  url('../fontface_icon/fonts/icomoon.eot') format('embedded-opentype'),
+  src: url('fonts/icomoon.eot?5u6udp');
+  src: url('../fontface_icon/fonts/icomoon.eot') format('embedded-opentype'),
     url('../fontface_icon/fonts/icomoon.ttf') format('truetype'),
     url('../fontface_icon/fonts/icomoon.woff') format('woff'),
     url('../fontface_icon/fonts/icomoon.svg') format('svg');
@@ -28,14 +28,17 @@
   font-display: block;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0%;
   padding: 0%;
+  position: relative;
 }
+
+/* HEADER */
 
 #logo {
   margin-top: 20px;
@@ -51,6 +54,8 @@ body {
   font-size: 18px;
 
 }
+
+/* CARROUSEL */
 
 .slideshow-container {
   max-width: 700px;
@@ -120,7 +125,7 @@ body {
   background-color: #011d28;
 }
 
-/* Animation */
+/* ANIMATION */
 
 .fade {
   -webkit-animation-name: fade;
@@ -158,8 +163,10 @@ body {
   }
 }
 
+/* CONTENU DE LA PAGE */
+
 .content1 {
-  margin: 6rem 0 10rem 12rem;
+  margin: 6rem 0 10rem 10rem;
 }
 
 .content1 h1 {
@@ -173,7 +180,7 @@ body {
   font-family: 'open_sansregular';
   color: #5d5d5f;
   font-size: 16px;
-  
+
 
 }
 
@@ -182,11 +189,11 @@ body {
   font-weight: bold;
 }
 
-#boldtext2{
+#boldtext2 {
   font-weight: bold;
 }
 
-.content2{
+.content2 {
   display: flex;
 }
 
@@ -197,7 +204,7 @@ body {
   margin-right: 50px;
 }
 
-.content2 h1{
+.content2 h1 {
   font-family: 'eras_bold_itcregular';
   color: #011d28;
   font-size: 40px;
@@ -205,7 +212,7 @@ body {
   margin-bottom: 60px;
 }
 
-.content2 p{
+.content2 p {
   font-family: 'open_sansregular';
   color: #5d5d5f;
   font-size: 16px;
@@ -225,42 +232,85 @@ body {
   font-size: 18px;
 }
 
-.button2:hover{
+.button2:hover {
   background-color: #1a8e9b;
 }
 
-.polygone{
+.polygone {
   display: flex;
 }
 
-.polygone a{
+.polygone a {
   margin: 20px 0 20px 92%;
 }
 
-.navbar{
+/* FOOTER */
+
+.navbar {
   background-color: #1a353e;
   text-align: center;
-  height: 8vh;
+  height: 5vh;
+  padding-top: 30px;
 }
 
- .navbar a{
+.navbar a {
   font-family: 'eras_bold_itcregular';
   color: white;
   text-decoration: none;
   font-size: 20px;
   margin-left: 20px;
- }
+}
 
+.footer{
+  background-color: #001d26;
+  display: flex;
+  height: 30vh;
+  padding: 3vw 0 0 5rem;
+}
 
- /* SECTION DECOUVERTE */ 
+.footer p{
+  font-family: 'open_sansregular';
+  color: white;
+  font-size: 14px;
+}
+
+.footer a{
+  font-family: 'open_sansregular';
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.section img{
+  padding-bottom: 25px;
+}
+
+.section2{
+  margin-top: 8rem;
+  margin-left: 18rem;
+}
+
+.section3{
+  margin-top: 8.5rem;
+  margin-left: 40rem;
+  text-align: right;
+}
+
+#acs{
+  color: #057d86;
+  font-weight: bold;
+}
+
+/* SECTION DECOUVERTE */
 /* IL FAUDRA REMPLACER LE MARGIN RIGHT PAR LA LARGEUR DU MENU*/
 .sectionOffres {
   width: 60vw;
   float: right;
   height: 80vh;
 }
+
 #container {
-  background: url(../images/reflets_container.png),#008090;
+  background: url(../images/reflets_container.png), #008090;
   background-size: cover;
   object-fit: fill;
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
@@ -286,26 +336,28 @@ body {
   position: relative;
   width: 25vw;
   z-index: 3;
-  transform: translate(115%,-30%);
+  transform: translate(115%, -30%);
 
 }
 
 .onglets {
   position: absolute;
   width: 20%;
+
 }
 
 .onglets button {
   border: none;
-  border-bottom: solid rgb(70, 70, 70);
+  border-bottom: solid rgba(148, 148, 158, 255);
   background-color: transparent;
-  color: rgb(70, 70, 70);
+  color: rgba(148, 148, 158, 255);
   padding: 22px 0px;
   width: 80%;
   height: 36px;
   text-align: left;
   cursor: pointer;
-
+  font-family: 'open_sansregular';
+  font-size: 18px;
 }
 
 .onglets button.active {
@@ -318,6 +370,7 @@ body {
 }
 
 .tabcontent a {
+  font-family: 'open_sansregular';
   color: white;
   text-decoration: none;
   border: none;
@@ -327,6 +380,7 @@ body {
 }
 
 .tabcontent p {
+  font-family: 'open_sansregular';
   width: 80%;
   margin-left: 12.5%;
   text-justify: auto;
@@ -337,19 +391,29 @@ body {
   padding-left: 7vw;
 }
 
-.titre{
+.offres p {
+  font-family: 'open_sansregular';
+}
+
+.titre {
+  font-family: 'eras_bold_itcregular';
   margin-top: 20vh;
   text-align: right;
   padding-right: 3vw;
 }
 
 
-/*effet de fondu*/ 
+/*effet de fondu*/
 .tabcontent {
-  animation: fadeEffect 0.5s; 
+  animation: fadeEffect 1s;
 }
 
 @keyframes fadeEffect {
-  from {opacity: 0.4;}
-  to {opacity: 1;}
+  from {
+    opacity: 0.2;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
