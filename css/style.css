@@ -1,153 +1,343 @@
 @font-face {
   font-family: 'open_sansregular';
   src: url("../fonts/Open_sans-regular/opensans-regular-webfont.woff2") format('woff2'),
-       url("../fonts/Open_sans-regular/opensans-regular-webfont.woff") format('woff');
+    url("../fonts/Open_sans-regular/opensans-regular-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sansbold';
+  src: url('../fonts/opensans-bold.woff2') format('woff2'),
+       url('../fonts/opensans-bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'eras_bold_itcregular';
+  src: url("../fonts/Erasbd/erasbd-webfont.woff2") format('woff2'),
+    url("../fonts/Erasbd/erasbd-webfont.woff") format('woff');
   font-weight: normal;
   font-style: normal;
 
 }
 
 @font-face {
-font-family: 'eras_bold_itcregular';
-src: url("../fonts/Erasbd/erasbd-webfont.woff2") format('woff2'),
-     url("../fonts/Erasbd/erasbd-webfont.woff") format('woff');
-font-weight: normal;
-font-style: normal;
-
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot') format('eot'), 
+  url('../fonts/icomoon.woff2') format('woff2'),
+    url('../fonts/icomoon.svg') format('svg');
 }
 
-body{
+html{
+  scroll-behavior: smooth;
+}
+
+body {
   margin: 0%;
   padding: 0%;
 }
 
-#logo{
-margin-top: 20px;
-margin-left: 100px;
+#logo {
+  margin-top: 20px;
+  margin-left: 100px;
 }
 
-.header p{
+/* NAVBAR */ 
+.menu {
+  background-color: white;
+  width: 5vw;
+  height: 100vw;
+  text-align: center;
+  font-size: 1.8vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+  box-shadow: 10px -1550px 35px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+  padding-top: 3%;
+}
+
+.scroll {
+  margin-top: 35vh;
+}
+
+.scroll p {
+  transform: rotate(90deg);
+  opacity: 0.2;
+  font-size: 14px;
+  font-family: 'open_sansbold';
+  letter-spacing: 2px;
+}
+
+.line {
+  margin-top: 5vh;
+  margin-left: 50%;
+}
+
+.menu ul {
+  padding: 0;
+  margin-top: 10vh;
+  list-style: none;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.icon-english:before {
+  font-family: 'icomoon';
+  content: "\e903";
+}
+.icon-french:before {
+  font-family: 'icomoon';
+  color: #008090;
+  content: "\e904";
+}
+.icon-menu:before {
+  font-family: 'icomoon';
+  color: #008090;
+  content: "\e905";
+}
+.icon-phone:before {
+  font-family: 'icomoon';
+  color: #008090;
+  content: "\e906";
+}
+.icon-search:before {
+  font-family: 'icomoon';
+  color: #008090;
+  content: "\e907";
+}
+.icon-spanish:before {
+  font-family: 'icomoon';
+  content: "\e908";
+}
+.line{
+  height: 15vh;
+  border-left: 2px solid #008090;
+}
+
+
+.header p {
   font-family: 'open_sansregular';
   color: #6b6b6b;
   position: absolute;
   left: 50%;
   top: 4rem;
   font-size: 18px;
-  
+
 }
 
 .slideshow-container {
-max-width: 700px;
-position: relative;
-margin-left: 20rem;
-margin-top: 8rem;
+  max-width: 700px;
+  position: relative;
+  margin-left: 20rem;
+  margin-top: 8rem;
 }
 
-.slideshow-container h1{
-font-family: 'eras_bold_itcregular';
-color: #011d28;
-margin: 15px 0 35px 0;
-font-size: 44px;
+.slideshow-container h1 {
+  font-family: 'eras_bold_itcregular';
+  color: #011d28;
+  margin: 15px 0 35px 0;
+  font-size: 44px;
 }
 
-.slideshow-container h2{
-font-family: 'open_sansregular';
-color: #5d5d5f;
-margin: 15px 0 20px 0;
-font-size: 24px;
+.slideshow-container h2 {
+  font-family: 'open_sansregular';
+  color: #5d5d5f;
+  margin: 15px 0 20px 0;
+  font-size: 24px;
 }
 
-.slideshow-container p{
-font-family: 'open_sansregular';
-color: #5d5d5f;
-margin: 15px 0 45px 0;
-font-size: 18px;
+.slideshow-container p {
+  font-family: 'open_sansregular';
+  color: #5d5d5f;
+  margin: 15px 0 45px 0;
+  font-size: 18px;
 
 }
 
-#grosfont{
-font-size: 48px;
-color: #008090;
+#grosfont {
+  font-size: 48px;
+  color: #008090;
 }
 
-.button{
-font-family: 'open_sansregular';
-background-color: #008090;
-border: none;
-color: white;
-padding: 15px 50px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-margin: 4px 0 35px 0;
-font-size: 18px;
+.button {
+  font-family: 'open_sansregular';
+  background-color: #008090;
+  border: none;
+  color: white;
+  padding: 15px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 0 35px 0;
+  font-size: 18px;
 }
 
-.button:hover {background-color: #1a8e9b ;
+.button:hover {
+  background-color: #1a8e9b;
 }
 
 .dot {
-cursor: pointer;
-height: 15px;
-width: 15px;
-margin: 0 2px;
-background-color: #fff;
-border-radius: 50%;
-display: inline-block;
-transition: background-color 0.6s ease;
-border: 1px solid #008090;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  border: 1px solid #008090;
 }
 
-.active, .dot:hover {
-background-color: #011d28;
+.active,
+.dot:hover {
+  background-color: #011d28;
 }
 
 /* Animation */
 
 .fade {
--webkit-animation-name: fade;
--webkit-animation-duration: 1.5s;
-animation-name: fade;
-animation-duration: 1.5s;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
-from {opacity: .4} 
-to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 @keyframes fade {
-from {opacity: .4} 
-to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 @media only screen and (max-width: 300px) {
-.prev, .next,.text {font-size: 11px}
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
+  }
 }
 
-.content1{
-margin: 6rem 0 0 12rem;
+.content1 {
+  margin: 6rem 0 10rem 12rem;
 }
 
-.content1 h1{
-font-family: 'eras_bold_itcregular';
-color: #011d28;
-font-size: 40px;
+.content1 h1 {
+  font-family: 'eras_bold_itcregular';
+  color: #011d28;
+  font-size: 40px;
+  margin-bottom: 75px;
 }
 
-.content1 p{
-font-family: 'open_sansregular';
-color: #5d5d5f;
-font-size: 16px;
+.content1 p {
+  font-family: 'open_sansregular';
+  color: #5d5d5f;
+  font-size: 16px;
+  
 
 }
 
-#boldtext{
-color: #011d28;
-font-weight: bold;
+#boldtext {
+  color: #011d28;
+  font-weight: bold;
 }
 
-/* SECTION DECOUVERTE */ 
+#boldtext2{
+  font-weight: bold;
+}
+
+.content2{
+  display: flex;
+}
+
+
+.content2 img {
+  width: 40%;
+  height: 40%;
+  margin-right: 50px;
+}
+
+.content2 h1{
+  font-family: 'eras_bold_itcregular';
+  color: #011d28;
+  font-size: 40px;
+  margin-top: 8rem;
+  margin-bottom: 60px;
+}
+
+.content2 p{
+  font-family: 'open_sansregular';
+  color: #5d5d5f;
+  font-size: 16px;
+  margin: 35px 0 35px 0
+}
+
+.button2 {
+  font-family: 'open_sansregular';
+  background-color: #008090;
+  border: none;
+  color: white;
+  padding: 15px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 50px 0 35px 0;
+  font-size: 18px;
+}
+
+.button2:hover{
+  background-color: #1a8e9b;
+}
+
+.polygone{
+  display: flex;
+}
+
+.polygone a{
+  margin: 20px 0 20px 92%;
+}
+
+.navbar{
+  background-color: #1a353e;
+  text-align: center;
+  height: 8vh;
+}
+
+ .navbar a{
+  font-family: 'eras_bold_itcregular';
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 20px;
+ }
+
+
+ /* SECTION DECOUVERTE */ 
 /* IL FAUDRA REMPLACER LE MARGIN RIGHT PAR LA LARGEUR DU MENU*/
 .sectionOffres {
   width: 60vw;
@@ -159,9 +349,9 @@ font-weight: bold;
   background-size: cover;
   object-fit: fill;
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-  height: 50vh;
-  width: 30vw;
-  margin-right: 4vw;
+  min-height: 50vh;
+  min-width: 30vw;
+  margin-right: 5vw;
   float: right;
   transform: translateY(-80%);
   z-index: 2;
@@ -173,7 +363,7 @@ font-weight: bold;
   width: 55vw;
   background-color: #001d26;
   clip-path: polygon(3% 10%, 100% 0%, 100% 97%, 50% 100%, 3% 97%, 0 50%);
-  margin-right: 4vw;
+  margin-right: 5vw;
   float: right;
 }
 
@@ -248,4 +438,3 @@ font-weight: bold;
   from {opacity: 0.4;}
   to {opacity: 1;}
 }
-
