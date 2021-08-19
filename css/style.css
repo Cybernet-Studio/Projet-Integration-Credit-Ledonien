@@ -80,6 +80,7 @@ body {
   padding: 0;
   margin-top: 10vh;
   list-style: none;
+  cursor: pointer;
 }
 
 .sidenav {
@@ -93,6 +94,28 @@ body {
   overflow-x: hidden;
   transition: 0.5s;
 }
+
+.navbarLinks {
+  text-align: right;
+  margin-right: 16vw;
+  margin-top: 8vw;
+
+}
+
+.navbarLinks ul {
+  font-family:'eras_bold_itcregular';
+  list-style: none;
+  font-size: 7vh;
+}
+
+.navbarLinks a {
+  color: #008090;
+  text-decoration: none;
+}
+
+
+
+
 .icon-english:before {
   font-family: 'icomoon';
   content: "\e903";
@@ -106,6 +129,7 @@ body {
   font-family: 'icomoon';
   color: #008090;
   content: "\e905";
+  cursor: pointer;
 }
 .icon-phone:before {
   font-family: 'icomoon';
