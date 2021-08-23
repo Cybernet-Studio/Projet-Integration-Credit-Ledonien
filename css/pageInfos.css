@@ -30,36 +30,51 @@
 
 
 /*Fonts*/
-h1,
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.background{
+    background-image: url("../images/presentation.png");
+    background-repeat: no-repeat;
+    height: 45vw;
+    
+    margin: 0;
+}
+
+.background h1{
+    font-family: 'eras_bold_itcregular';
+    font-size: 72px;
+    color: white;
+    text-align: center;
+    padding-top: 18vw;
+}
+
 h2 {
     font-family: 'eras_bold_itcregular';
+    color: #041c28;
 }
 
 p {
     font-family: 'open_sansregular';
-}
-
-.presentation {
-    background-image: url("presentation.jpg");
-    line-height: 50vh;
-    height: 50vh;
-}
-
-.presentation h1 {
-    line-height: 0;
-    font-size: 5vh;
-    color: white;
+    font-size: 16px;
 }
 
 .txtInfos {
-    width: 80vh;
     margin-left: 5%;
 }
 
 .txtInfos h2 {
-    margin-top: 10%;
+    font-size: 40px;
 }
 
-.txtInfos .start {
+.txtInfos .start{
     margin-top: 5%;
+}
+
+#boldtext{
+    font-weight: bold;
+    color: #041c28;
 }
