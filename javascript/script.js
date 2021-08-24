@@ -1,3 +1,5 @@
+
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -48,3 +50,5 @@ function openoffers(evt, offerName) {
   } 
 
 document.getElementById("defaultOpen").click();
+
+

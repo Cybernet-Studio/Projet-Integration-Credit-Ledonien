@@ -1,0 +1,42 @@
+<header>
+
+    <!-- MENU (ça devrait être l'inverse mais jme suis cago dessus dans les classes) -->
+    <div class="menu">
+        <div id="red" class="icon_menu" onclick="toggle()"> <span>MENU</span> </div>
+        <ul>
+            <li><span class="icon-french"></span> </li>
+            <li><span class="icon-phone"></span> </li>
+            <li><span class="icon-search"></span> </li>
+        </ul>
+        <div class="scroll">
+            <p>SCROLL</p>
+            <div class="line"></div>
+        </div>
+    </div>
+    <!-- Y'A DU JS CACHÉ ICI -->
+    <script>
+        function toggle() {
+            if (document.getElementById("mySidenav").style.width == "100%") {
+                closeNav();
+            } else {
+                openNav();
+            }
+        }
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+            document.getElementById("opacity").style.opacity = "1";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "";
+            document.getElementById("opacity").style.opacity = "0";
+        }
+    </script>
+    <!-- HEADER-->
+    <div class="header">
+        <div id="logo"> <a href="index.php"><img src="images/logo.png" alt="le logo du crédit Ledonien"></a></div>
+        <p>UN CRÉDIT VOUS ENGAGE ET DOIT ETRE REMBOURSÉ.<br>VÉRIFIEZ VOS CAPACITÉS DE REMBOURSEMENT AVANT DE VOUS
+            ENGAGER</p>
+    </div>
+</header>
