@@ -1,2 +1,7 @@
-.blockSimulator{border:black solid 1px;width:70vh;height:60vh;text-align:center;}
-button{background:#008090;color:white;width: 95%;height: 10vh;text-align: left;border: none; margin-bottom: 7%;}
+.blockSimulator{border:black solid 1px;width:70vh;height:65vh;text-align:center;}
+button{background:#008090;color:white;width: 95%;height: 11vh;text-align: left;border: none; margin-bottom: 7%;}
+.img1, .img2, .img3{width:9vh; fill: white;}
+button img{float: left;margin: 7px 0 0 10px;}
+button h3, button p{margin-left: 100px;}
+.blockSimulator h3{font-size: 5vh;}
+.blockSimulator .bt h3{font-size: 3vh;}
