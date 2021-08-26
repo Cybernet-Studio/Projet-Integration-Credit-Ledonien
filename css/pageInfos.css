@@ -39,8 +39,8 @@ body{
 .background{
     background-image: url("../images/presentation.png");
     background-repeat: no-repeat;
+    background-size: cover;
     height: 45vw;
-    
     margin: 0;
 }
 
@@ -55,11 +55,13 @@ body{
 h2 {
     font-family: 'eras_bold_itcregular';
     color: #041c28;
+    margin-top: 5%;
 }
 
 p {
     font-family: 'open_sansregular';
     font-size: 16px;
+    margin-top: 2%;
 }
 
 .txtInfos {
@@ -77,4 +79,18 @@ p {
 #boldtext{
     font-weight: bold;
     color: #041c28;
+}
+
+@media only screen and (max-width: 1200px){
+    .background h1{
+        font-size: 6vw;
+    }
+
+    .txtInfos h2{
+        font-size: 6vw;
+    }
+
+    p{
+        font-size: 3vw;
+    }
 }
