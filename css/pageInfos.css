@@ -60,6 +60,7 @@ h2 {
 
 p {
     font-family: 'open_sansregular';
+    color: #5d5d5f;
     font-size: 16px;
     margin-top: 2%;
 }
@@ -88,9 +89,13 @@ p {
 
     .txtInfos h2{
         font-size: 7vw;
+        width: 80%;
+        margin-left: 7%;
     }
 
     p{
         font-size: 4vw;
+        width: 80%;
+        margin-left: 7%;
     }
 }

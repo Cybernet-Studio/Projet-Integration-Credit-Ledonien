@@ -19,41 +19,34 @@
             <p>UN CRÉDIT VOUS ENGAGE ET DOIT ETRE REMBOURSÉ.<br>VÉRIFIER VOS CAPACITÉS DE REMBOURSEMENT AVANT DE VOUS
                 ENGAGER</p>
         </div>
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <h1>Prêt Personnel<br>multi-projet</h1>
-                <h2> <span id="grosfont">4,07% </span>TAEG fixe<br>Offre valable jusqu'au 31/08/2021</h2>
-                <p>Pour 6 500€ empruntés sur 60mois</p>
+        <div id="slideshow">
+            <div class="container">
+                <section>
+                    <h1>Prêt Personnel<br>multi-projet</h1>
+                    <h2> <span id="grosfont">4,07% </span>TAEG fixe<br>Offre valable jusqu'au 31/08/2021</h2>
+                    <p>Pour 6 500€ empruntés sur 60mois</p>
 
-                <a class="button" href="">Découvrir</a>
-            </div>
-
-            <div class="mySlides fade">
-                <h1>Un crédit rapide</h1>
-                <h2>
-                    Une demande 100% en Ligne, une réponse<br>sous réception de votre dossier complet
-                </h2>
-                <p>
-                    Crédit Lédonien peut vous faire une réponse dans les 24h<br>ouvrées par SMS dans le cas d’une
-                    acceptation, et par email<br>dans le cas d’un refus.
-                </p>
-                <a class="button" href="">Découvrir</a>
-            </div>
-            <div class="mySlides fade">
-                <h1>Un crédit transparent</h1>
-                <h2>
-                    <span id="grosfont">100%</span> de nos clients bénéficient d’un crédit<br> à taux fixe
-                    et à échéance de remboursement fixe.</h2>
-                <p>Aucun frais caché</p>
-                <a class="button" href="">Découvrir</a>
-
-            </div>
-            <br>
-
-            <div style="text-align:left">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
+                    <a class="button" href="">Découvrir</a>
+                </section>
+                <section>
+                    <h1>Un crédit rapide</h1>
+                    <h2>
+                        Une demande 100% en Ligne, une réponse<br>sous réception de votre dossier complet
+                    </h2>
+                    <p>
+                        Crédit Lédonien peut vous faire une réponse dans les 24h<br>ouvrées par SMS dans le cas d’une
+                        acceptation, et par email<br>dans le cas d’un refus.
+                    </p>
+                    <a class="button" href="">Découvrir</a>
+                </section>
+                <section>
+                    <h1>Un crédit transparent</h1>
+                    <h2>
+                        <span id="grosfont">100%</span> de nos clients bénéficient d’un crédit<br> à taux fixe
+                        et à échéance de remboursement fixe.</h2>
+                    <p>Aucun frais caché</p>
+                    <a class="button" href="">Découvrir</a>
+                </section>
             </div>
 
 
@@ -62,7 +55,7 @@
         <div id="clipped">
             <div class="offres">
                 <div class="titre">
-                    <h1> Découvrez nos offres <br> et services </h1>
+                    <h1 id="linkoffres"> Découvrez nos offres <br> et services </h1>
                     <p> Auto, Travaux, Déco, le <strong> Crédit Lédonien </strong> propose une solution de <br>
                         financement pour chacun de vos projets personels.</p>
                 </div>
@@ -79,7 +72,7 @@
                 </div>
             </div>
         </div>
-        <div id="container">
+        <div id="containerp">
             <!-- C'est pour contenir le polygone-->
         </div>
         <!-- Les offres -->
@@ -214,19 +207,20 @@
         <div class="navbar">
             <a class="liens" href="#logo">Accueil</a>
             <a class="liens" href="">Qui somme-nous?</a>
-            <a class="liens" href="">Nos offres</a>
-            <a class="liens" href="">Contactez-nous</a>
+            <a class="liens" href="#linkoffres">Nos offres</a>
+            <a class="liens" href="#contact">Contactez-nous</a>
         </div>
 
         <div class="footer">
-            <div class="section">
+            <div class="section1">
                 <img src="images/logo 2.svg" alt="">
                 <p>Un crédit vous engage et doit être remboursé.<br>
                     Vérifiez vos capacités de remboursement avant<br> de vous engager.</p>
             </div>
             <div class="section2">
                 <address>
-                    <p>1 place de la République<br>39000 Lons le Saunier <br><a href="tel:+330384125659">Tél : + 33 (0)
+                    <p>1 place de la République<br>39000 Lons le Saunier <br><a id="contact"
+                            href="tel:+330384125659">Tél : + 33 (0)
                             3 84
                             12 56 89 </a>
                         <br>
