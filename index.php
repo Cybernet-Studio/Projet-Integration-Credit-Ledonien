@@ -48,12 +48,7 @@
                     <a class="button" href="">Découvrir</a>
                 </section>
             </div>
-
-
-
             <?php require 'simulateur.html'?>
-
-
 
 </div> 
 

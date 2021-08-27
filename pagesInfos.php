@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content= "Qui sommes-nous? Découvrez les valeurs et les engagements du Crédit Lédonien. Faites votre simulation et demande de crédit conso en ligne pour bénéficier des meilleurs taux.">
     <meta name="keywords" content="credit conso, crédit à la consommation, pret perso, lons le saunier, lédonien"/>
+
     <link rel="stylesheet" href="css/pageInfos.css">
     <link rel="stylesheet" media="screen and (max-width: 1024px)" href="css/mobile.css">
     <link rel="stylesheet" media="screen and (min-width: 1025px)" href="css/style.css">
