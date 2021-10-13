@@ -1,0 +1,82 @@
+h2 {
+    font-family: 'eras_bold_itcregular';
+    color: #041c28;
+}
+
+#boldtext{
+    font-weight: bold;
+    color: #041c28;
+}
+
+p {
+    font-family: 'open_sansregular';
+    font-size: 16px;
+    line-height: 170%;
+}
+
+
+@media screen and (min-width: 1025px) {
+  
+
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    .background{
+        background-image: url("../images/presentation.png");
+        background-repeat: no-repeat;
+        height: 45vw;
+        
+        margin: 0;
+    }
+
+    .background h1{
+        font-family: 'eras_bold_itcregular';
+        font-size: 72px;
+        color: white;
+        text-align: center;
+        padding-top: 18vw;
+    }
+
+
+    .txtInfos {
+        margin-left: 5%;
+        width: 47vw;
+        margin-bottom: 35vh;
+    }
+
+    .txtInfos h2 {
+        font-size: 40px;
+        width: 35vw;
+        margin-top: 7vh;
+        margin-bottom: 7vh;
+    }
+
+    .txtInfos .start{
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .background, .background h1 {
+        display: none;
+    }
+
+    .txtInfos {
+        margin-left: 5%;
+        width: 90vw;
+        margin-bottom: 15vh;
+    }
+
+    .txtInfos h2 {
+        font-size: 25px;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+
+    .txtInfos .start{
+        margin-top: 20%;
+    }
+
+}

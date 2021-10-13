@@ -1,0 +1,57 @@
+<div class="simulateur">
+      <!--2 Windows Simulator-->
+<div id="simulatorWindows">
+
+      <!--Formulaire-->
+      <div class="blockSimulatorCalc" id="test">
+          <form method="GET">
+              <h2>Prêt Personnel</h2>
+              <p>Montant à emprunter</p>
+              <input type="number" name="amount" id="amount">
+              <p>Choisissez un montant entre 500 et 7500 €</p>
+          </form>
+      
+          <div class="horizontal">
+                  <form method="GET">
+                      <p class="left">Mensualités</p>
+                      <input type="number" name="monthlyPayments" id="monthlyPayments">
+                      <p class="left">de 10 à 12000 €</p>
+                  </form>
+                  <form method="GET"></form>
+                      <p class="left">Ou durée</p>
+                      <input type="number" name="time" id="time">
+                      <p class="left">de 6 à 84 mois</p>
+                  </form>
+          </div>
+          <button id="btReturn" onclick="closeCalc()">
+              <p>Retour</p>
+          </button>
+      </div>
+      
+          <!--Blue Buttons-->
+          <div class="blockSimulator">
+              <h3>Simulation de crédit en ligne</h2>
+              <p>Quel type de crédit shouaitez-vous réaliser?</p>
+      
+              <button id="slideSimulator" class="bt" onclick="openCalc()">
+                  <img src="images/carte-de-credit-valid.svg" alt="image carte de crédit" class="img1">
+                  <h3>Prêt Personnel</h3>
+                  <p>Un crédit à partir de 5000€</p>
+              </button>
+      
+              <button class="bt">
+                  <img src="images/carte-de-credit-turn.svg" alt="image carte de crédit" class="img2">
+                  <h3>Crédit renouvelable</h3>
+                  <p>Un crédit à partir de 3000€</p>
+              </button>
+      
+              <button class="bt">
+                  <img src="images/carte-de-credit-double.svg" alt="image carte de crédit" class="img3">
+                  <h3>Rachat de crédit</h3>
+                  <p>Regroupez tous vos crédits en un seul</p>
+              </button>
+          </div>
+      </div>
+      <script src="javascript/simulatorCalc.js"></script>
+
+</div>
